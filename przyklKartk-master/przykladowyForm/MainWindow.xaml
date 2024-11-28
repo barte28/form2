@@ -39,18 +39,40 @@
             <StackPanel>
                 <TextBlock>Podaj temp</TextBlock>
                 <TextBox x:Name="temp_textbox"></TextBox>
-                <RadioButton GroupName="temp1_radio" x:Name="celcjusz_radio">C</RadioButton>
-                <RadioButton GroupName="temp1_radio" x:Name="farenhajt_radio">F</RadioButton>
-                <RadioButton GroupName="temp1_radio" x:Name="kelwin_radio">K</RadioButton>
+                <RadioButton GroupName="temp1_radio" x:Name="celcjusz1_radio">C</RadioButton>
+                <RadioButton GroupName="temp1_radio" x:Name="farenhajt1_radio">F</RadioButton>
+                <RadioButton GroupName="temp1_radio" x:Name="kelwin1_radio">K</RadioButton>
                 <Button Click="Button_Click_2">Przelicz</Button>
                 
                 <Separator></Separator>
                 
-                <RadioButton GroupName="temp2_radio" x:Name="celcjusz_radio">C</RadioButton>
-                <RadioButton GroupName="temp2_radio" x:Name="farenhajt_radio">F</RadioButton>
-                <RadioButton GroupName="temp2_radio" x:Name="kelwin_radio">K</RadioButton>
+                <RadioButton GroupName="temp2_radio" x:Name="celcjusz2_radio">C</RadioButton>
+                <RadioButton GroupName="temp2_radio" x:Name="farenhajt2_radio">F</RadioButton>
+                <RadioButton GroupName="temp2_radio" x:Name="kelwin2_radio">K</RadioButton>
             </StackPanel>
             
+        </TabItem>
+
+        <TabItem Header="Kalkulator">
+            <StackPanel>
+                <TextBlock>Podaj 1 liczbę</TextBlock>
+                <TextBox x:Name="liczba1_textbox"></TextBox>
+                <TextBlock>Podaj 2 liczbę</TextBlock>
+                <TextBox x:Name="liczba2_textbox"></TextBox>
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button Click="Button_Click_3" Margin="5" Padding="15">Silnia pierwszej</Button>
+                    <Button Click="Button_Click_4" Margin="5" Grid.Column="1" Padding="15">NWD</Button>
+                    <Button Click="Button_Click_5" Margin="5" Grid.Row="1" Padding="15">potęgowanie</Button>
+                </Grid>
+            </StackPanel>
         </TabItem>
         
     </TabControl>

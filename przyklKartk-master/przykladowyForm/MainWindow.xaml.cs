@@ -86,5 +86,28 @@ namespace przykladowyForm
         {
 
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            int liczba1;
+            int liczba2;
+            long wynik;
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            int liczba1;
+            int liczba2;
+            int wynik;
+            
+
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            int liczba1;
+            int liczba2;
+            int wynik;
+        }
     }
 }

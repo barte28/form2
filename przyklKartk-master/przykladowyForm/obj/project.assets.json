@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\programista\\source\\repos\\przykladowyForm\\przykladowyForm\\przykladowyForm.csproj",
+      "projectUniqueName": "C:\\Users\\programista\\Desktop\\przyklKartk-master\\przyklKartk-master\\przykladowyForm\\przykladowyForm.csproj",
       "projectName": "przykladowyForm",
-      "projectPath": "C:\\Users\\programista\\source\\repos\\przykladowyForm\\przykladowyForm\\przykladowyForm.csproj",
+      "projectPath": "C:\\Users\\programista\\Desktop\\przyklKartk-master\\przyklKartk-master\\przykladowyForm\\przykladowyForm.csproj",
       "packagesPath": "C:\\Users\\programista\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\programista\\source\\repos\\przykladowyForm\\przykladowyForm\\obj\\",
+      "outputPath": "C:\\Users\\programista\\Desktop\\przyklKartk-master\\przyklKartk-master\\przykladowyForm\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\programista\\AppData\\Roaming\\NuGet\\NuGet.Config",
