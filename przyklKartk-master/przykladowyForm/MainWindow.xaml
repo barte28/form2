@@ -1,0 +1,58 @@
+﻿<Window x:Class="przykladowyForm.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:przykladowyForm"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <TabControl>
+        
+        <TabItem Header="obwod figury">
+            <StackPanel>
+                <TextBlock>Podaj bok figury</TextBlock>
+                <TextBox x:Name="bok_textbox"></TextBox>
+                <TextBlock>Wybierz figure</TextBlock>
+                <ComboBox x:Name="figura_ComboBox" SelectedIndex="0">
+                    <ComboBoxItem>Kwadrat</ComboBoxItem>
+                    <ComboBoxItem>Trójkąt prostokątny</ComboBoxItem>
+                    <ComboBoxItem>Pięciokąt</ComboBoxItem>
+                </ComboBox>
+                <Button Click="Button_Click">Oblicz</Button>
+            </StackPanel>
+        </TabItem>
+        
+        <TabItem Header="kalkulator walut">
+            <StackPanel>
+                <TextBlock>Podaj ile waluty</TextBlock>
+                <TextBox x:Name="waluta_textbox"></TextBox>
+                <TextBlock>Wybierz na co przeliczyć</TextBlock>
+                <RadioButton GroupName="waluta_radio" x:Name="euro_radio" IsChecked="True">Euro</RadioButton>
+                <RadioButton GroupName="waluta_radio" x:Name="frank_radio">Frank</RadioButton>
+                <RadioButton GroupName="waluta_radio" x:Name="dolar_radio">Dolar</RadioButton>
+                <Button Click="Button_Click_1">Przelicz walutę</Button>
+            </StackPanel>
+            
+        </TabItem>
+
+        <TabItem Header="Kalkulator Temperatur">
+            <StackPanel>
+                <TextBlock>Podaj temp</TextBlock>
+                <TextBox x:Name="temp_textbox"></TextBox>
+                <RadioButton GroupName="temp1_radio" x:Name="celcjusz_radio">C</RadioButton>
+                <RadioButton GroupName="temp1_radio" x:Name="farenhajt_radio">F</RadioButton>
+                <RadioButton GroupName="temp1_radio" x:Name="kelwin_radio">K</RadioButton>
+                <Button Click="Button_Click_2">Przelicz</Button>
+                
+                <Separator></Separator>
+                
+                <RadioButton GroupName="temp2_radio" x:Name="celcjusz_radio">C</RadioButton>
+                <RadioButton GroupName="temp2_radio" x:Name="farenhajt_radio">F</RadioButton>
+                <RadioButton GroupName="temp2_radio" x:Name="kelwin_radio">K</RadioButton>
+            </StackPanel>
+            
+        </TabItem>
+        
+    </TabControl>
+
+</Window>
