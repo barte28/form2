@@ -18,7 +18,7 @@
                     <ComboBoxItem>Trójkąt prostokątny</ComboBoxItem>
                     <ComboBoxItem>Pięciokąt</ComboBoxItem>
                 </ComboBox>
-                <Button Click="Button_Click">Oblicz</Button>
+                <Button Click="Button_Click" Margin="10">Oblicz</Button>
             </StackPanel>
         </TabItem>
         
@@ -30,7 +30,7 @@
                 <RadioButton GroupName="waluta_radio" x:Name="euro_radio" IsChecked="True">Euro</RadioButton>
                 <RadioButton GroupName="waluta_radio" x:Name="frank_radio">Frank</RadioButton>
                 <RadioButton GroupName="waluta_radio" x:Name="dolar_radio">Dolar</RadioButton>
-                <Button Click="Button_Click_1">Przelicz walutę</Button>
+                <Button Click="Button_Click_1" Margin="10">Przelicz walutę</Button>
             </StackPanel>
             
         </TabItem>
@@ -71,6 +71,7 @@
                     <Button Click="Button_Click_3" Margin="5" Padding="15">Silnia pierwszej</Button>
                     <Button Click="Button_Click_4" Margin="5" Grid.Column="1" Padding="15">NWD</Button>
                     <Button Click="Button_Click_5" Margin="5" Grid.Row="1" Padding="15">potęgowanie</Button>
+                    <Button Click="Button_Click_6" Margin="5" Grid.Column="1" Grid.Row="1">Suma wszystkich</Button>
                 </Grid>
             </StackPanel>
         </TabItem>

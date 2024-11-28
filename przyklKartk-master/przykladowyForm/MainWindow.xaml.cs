@@ -89,25 +89,109 @@ namespace przykladowyForm
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            int liczba1;
-            int liczba2;
-            long wynik;
+            int liczba = 0;
+            if(int.TryParse(liczba1_textbox.Text, out liczba))
+            {
+                if (liczba < 0)
+                {
+                    MessageBox.Show("Musi być liczba dodatnia");
+                }
+                else
+                {
+                    long wartoscsilni = 1;
+                    for(int i = 1; i <= liczba; i++)
+                    {
+                        wartoscsilni = wartoscsilni * i;
+                    }
+                    MessageBox.Show(wartoscsilni.ToString(),"Silnia");
+                }
+            }
+            else
+            {
+                MessageBox.Show("oczekuję liczby w pierwszym polu edycyjnym");
+            }
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            int liczba1;
-            int liczba2;
-            int wynik;
-            
-
+            int liczba1 = 0;
+            int liczba2 = 0;
+            if(int.TryParse(liczba1_textbox.Text, out liczba1) && int.TryParse(liczba2_textbox.Text, out liczba2))
+            {
+                MessageBox.Show(nwd2(liczba1, liczba2).ToString(), "nwd");
+            }
+            else
+            {
+                MessageBox.Show("To muszą być liczby całkowite");
+            }
         }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
-            int liczba1;
-            int liczba2;
-            int wynik;
+;           int n;
+            int k;
+            if(int.TryParse(liczba1_textbox.Text,out n) && int.TryParse(liczba2_textbox.Text,out k))
+            {
+                int potega = 1;
+                //k razy mnoże przez n
+                for(int i = 1; i <= k; i++)
+                {
+                    potega = potega * n;
+                }
+                MessageBox.Show(potega.ToString(), "Potęga n do k");
+            }
+            else
+            {
+                MessageBox.Show("To muszą być liczby całkowite");
+            }
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            int a;
+            int b;
+            if(int.TryParse(liczba1_textbox.Text,out a) && int.TryParse(liczba2_textbox.Text,out b))
+            {
+                int suma = 0;
+                for(int i = a; i<=b;i++)
+                {
+                    suma = suma + i;
+                }
+                MessageBox.Show(suma.ToString());
+            }
+            else
+            {
+                MessageBox.Show("To muszą być liczby całkowite");
+            }
+        }
+
+        private int nwd1(int a, int b)
+        {
+            if (a == 0 || b == 0)
+                return a + b;
+            while (a != b)
+            {
+                if (a > b)
+                {
+                    a = a - b;
+                }
+                else
+                {
+                    b = b - a;
+                }
+            }
+            return a;
+        }
+
+        private int nwd2(int a, int b)
+        {
+            while (b != 0)
+            {
+                int reszta = a % b;
+                a = b;
+                b = reszta;
+            }
+            return a;
         }
     }
 }
